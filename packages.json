@@ -1,10 +1,9 @@
 {
 	"all": {
 		"include": {
-			"bluefin": [
+			"all": [
 				"bash-color-prompt",
 				"bcache-tools",
-				"cockpit-bridge",
 				"evtest",
 				"epson-inkjet-printer-escpr",
 				"epson-inkjet-printer-escpr2",
@@ -13,23 +12,13 @@
 				"gcc",
 				"glow",
 				"gum",
-				"gnome-shell-extension-appindicator",
-				"gnome-shell-extension-blur-my-shell",
-				"gnome-shell-extension-caffeine",
-				"gnome-shell-extension-dash-to-dock",
-				"gnome-shell-extension-gsconnect",
-				"gnome-shell-extension-logo-menu",
 				"hplip",
 				"ifuse",
 				"input-remapper",
-				"libgda-sqlite",
-				"libgda",
 				"libimobiledevice",
-				"libratbag-ratbagd",
 				"libxcrypt-compat",
 				"make",
 				"mesa-libGLU",
-				"nautilus-gsconnect",
 				"nerd-fonts",
 				"playerctl",
 				"pulseaudio-utils",
@@ -48,11 +37,26 @@
 				"usbmuxd",
 				"wireguard-tools",
 				"xprop",
-				"yaru-theme",
 				"wl-clipboard", 
 				"zsh"
 			],
-			"bluefin-dx": [
+			"silverblue": [
+				"gnome-shell-extension-appindicator",
+				"gnome-shell-extension-caffeine",
+				"gnome-shell-extension-dash-to-dock",
+				"gnome-shell-extension-gsconnect",
+				"gnome-shell-extension-logo-menu",
+				"libgda-sqlite",
+				"libgda",
+				"libratbag-ratbagd",
+				"nautilus-gsconnect",
+				"yaru-theme"
+			],
+			"kinoite": [
+				"fastfetch",
+				"libadwaita-qt5"
+			],
+			"dx": [
 				"adobe-source-code-pro-fonts",
 				"cascadia-code-fonts",
 				"cockpit-machines",
@@ -66,7 +70,6 @@
 				"code",
 				"containerd.io",
 				"dbus-x11",
-				"devpod",
 				"docker-ce",
 				"docker-ce-cli",
 				"docker-buildx-plugin",
@@ -111,88 +114,100 @@
 			]
 		},
 		"exclude": {
-			"bluefin": [
+			"all": [
 				"firefox-langpacks",
 				"firefox",
-				"gnome-extensions-app",
-				"gnome-software-rpm-ostree",
-				"gnome-tour",
 				"ublue-os-update-services"
 			],
-			"bluefin-dx": []
+			"silverblue": [
+				"gnome-extensions-app",
+				"gnome-software-rpm-ostree",
+				"gnome-tour"
+			],
+			"kinoite": [
+				"plasma-welcome"
+			],
+			"dx": []
 		}
 	},
 	"38": {
 		"include": {
-			"bluefin": [
+			"silverblue": [
+				"gnome-shell-extension-blur-my-shell",
 				"gnome-shell-extension-tailscale-status"
 			],
-			"bluefin-dx": [
+			"dx": [
 				"distrobuilder",
+				"devpod",
 				"podman-plugins"
-			],
-			"bluefin-framework": []
+			]
 		},
 		"exclude": {
-			"bluefin": [
+			"silverblue": [
 				"podman-docker"
 			],
-			"bluefin-dx": []
+			"dx": []
 		}
 	},
 	"39": {
 		"include": {
-			"bluefin": [
-				"gnome-shell-extension-tailscale-gnome-qs",
+			"all": [
 				"input-leap",
-				"nautilus-open-any-terminal",
 				"tuned",
 				"tuned-ppd",
 				"tuned-utils",
 				"tuned-profiles-atomic"
 			],
-			"bluefin-dx": [
-				"distrobuilder",
-				"podman-plugins"
+			"silverblue": [
+				"gnome-shell-extension-blur-my-shell",
+				"gnome-shell-extension-tailscale-gnome-qs",
+				"nautilus-open-any-terminal"
 			],
-			"bluefin-framework": []
+			"dx": [
+				"distrobuilder",
+				"devpod",
+				"podman-plugins"
+			]
 		},
 		"exclude": {
-			"bluefin": [
+			"all": [
 				"podman-docker",
-				"gnome-terminal-nautilus",
 				"power-profiles-daemon",
 				"tlp",
 				"tlp-rdw"
 			],
-			"bluefin-dx": [],
-			"bluefin-framework": []
+			"silverblue": [
+				"gnome-terminal-nautilus"
+			],
+			"dx": []
 		}
 	},
 	"40": {
 		"include": {
-			"bluefin": [
-				"gnome-shell-extension-tailscale-gnome-qs",
+			"all": [
 				"input-leap",
-				"nautilus-open-any-terminal",
 				"tuned",
 				"tuned-ppd",
 				"tuned-utils",
 				"tuned-profiles-atomic"
 			],
-			"bluefin-dx": [],
-			"bluefin-framework": []
+			"silverblue": [
+				"gnome-shell-extension-tailscale-gnome-qs",
+				"nautilus-open-any-terminal"
+			],
+			"dx": []
 		},
 		"exclude": {
-			"bluefin": [
+			"all":	[
 				"podman-docker",
-				"gnome-terminal-nautilus",
 				"power-profiles-daemon",
 				"tlp",
 				"tlp-rdw"
 			],
-			"bluefin-dx": [],
-			"bluefin-framework": []
+			"silverblue": [
+				"gnome-terminal-nautilus"
+			],
+			"dx": []
 		}
 	}
 
